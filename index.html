@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/6e565221c4.js" crossorigin="anonymous"></script>
+    <!-- link css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>DTrader</title>
+</head>
+
+<body>
+    <header class="nav_wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <img src="assets/img/nav_logo.svg" alt="" class="nav-logo">
+                    <button class="navbar-toggler order-md-first" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span><img src="assets/img/nav_icon.svg" alt=""></span>
+                    </button>
+                    <a href="#" class="login-btn d-md-none" type="submit">Login</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item ms-xl-5 ms-md-3">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item ms-xl-5 ms-md-3">
+                                <a class="nav-link" href="#">Buy</a>
+                            </li>
+                            <li class="nav-item ms-xl-5 ms-md-3">
+                                <a class="nav-link" href="#">Sell</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <a href="#" class="custom_btn clr_green me-md-4" type="submit">Login</a>
+                            <a href="#" class="custom_btn clr_orange" type="submit">Sign up</a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- navber end  -->
+    <!-- hero section start  -->
+    <section class="hero_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="hero_text">
+                        <h1 class="text_title">
+                            The reliable<br> platform to invest in<br> the world's popular<br> <span>digital
+                                currencies</span>
+                        </h1>
+                        <p class="text_detail">
+                            We are New Zealand's owned and operated trading platform that allows users to buy Bitcoin,
+                            Ethereum, Cardano, and many other popular crypto assets. We aim to fill the gap between our
+                            traditional fiat financial system and the new world of cryptocurrencies. </br> </br>
+                            <span>⭐</span>We follow industry-leading security standards. The added extra protection so
+                            you can trade with 100% confidence.
+                        </p>
+                        <a href="#" class="custom_btn clr_orange">Get Started</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 pe-lg-5 pe-md-3">
+                    <div class="hero_form ms-auto ">
+                        <img src="assets/img/bg_binance.svg" alt="" class="bg_bina">
+                        <img src="assets/img/bg_cardano.svg" alt="" class="bg_card">
+                        <h1 class="form_title">
+                            Buy Cryptocurrencies
+                            Today with us!
+                        </h1>
+                        <div class="form_inner">
+                            <label class="form-label">From New Zealand dollar (NZD)</label>
+                            <div class="input_wrap mb_50">
+                                <input type="number" class="form_control" placeholder="Enter Ammount">
+                                <div class="dropdown_wrap">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                            <img src="assets/img/new-zealand.svg" alt="">
+                                            <a href="#">NZD</a>
+                                        </button>
+                                        <ul class="dropdown-menu">
+
+                                            <li><a class="dropdown-item" href="#"><img src="assets/img/new-zealand.svg"
+                                                        alt="">
+                                                    <a href="#">NZD</a></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label class="form-label">To Bitcoin...</label>
+                            <div class="input_wrap">
+                                <input type="number" class="form_control" placeholder="Enter Ammount">
+                                <div class="dropdown_wrap">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                            <img src="assets/img/bitcoin.svg" alt="">
+                                            <a href="#">BTC</a>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <div class="search_menu">
+                                                <input type="text" class="form-control">
+                                                <i class="fas fa-search search_icon"></i>
+                                            </div>
+
+                                            <div class="dropdown dropdown--scrollable">
+                                                <li><a class="dropdown-item" href="#"><img src="assets/img/bitcoin.svg"
+                                                            alt=""><a href="#">BTC</a></a></li>
+                                                <li><a class="dropdown-item" href="#"><img src="assets/img/bitcoin.svg"
+                                                            alt=""><a href="#">BTC</a></a></li>
+                                                <li><a class="dropdown-item" href="#"><img src="assets/img/bitcoin.svg"
+                                                            alt=""><a href="#">BTC</a></a></li>
+                                                <li><a class="dropdown-item" href="#"><img src="assets/img/bitcoin.svg"
+                                                            alt=""><a href="#">BTC</a></a></li>
+                                                <li><a class="dropdown-item" href="#"><img src="assets/img/bitcoin.svg"
+                                                            alt=""><a href="#">BTC</a></a></li>
+                                                <li><a class="dropdown-item" href="#"><img src="assets/img/bitcoin.svg"
+                                                            alt=""><a href="#">BTC</a></a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="input_wrap">
+                                <input type="number" class="form_control" placeholder="Enter Ammount">
+
+                                <img src="assets/img/bitcoin.svg" alt="">
+                                <a href="#">BTC</a>
+                                <img src="assets/img/down.svg" alt="">
+                            </div> -->
+
+                        </div>
+                        <div class="btn_wrap">
+                            <a href="#" class="custom_btn ipad_res clr_green">Buy Now</a>
+                            <span>OR</span>
+                            <a href="#" class="custom_btn ipad_res form_btn">Sell Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section end  -->
+    <!-- crypto rates start  -->
+    <section class="crypto_rates">
+        <div class="container">
+            <div class="crypto_inner">
+                <h1 class="crypto_title">
+                    Live <span>Crypto</span> Rates
+                </h1>
+                <div class="table-main w-100 flo">
+                    <table class="table">
+                        <thead>
+                            <tr class="border_none">
+                                <th scope="col"><img src="assets/img/crypto_rates/table_down.svg" alt=""
+                                        class="table_down_icon"></th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Symbol</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">24h Change</th>
+                                <th scope="col">Graph</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border_bt">
+
+                                <th scope="row"><img src="assets/img/crypto_rates/table_bit.svg" alt=""></th>
+                                <td class="py-md-4">Bitcoin</td>
+                                <td class="py-md-4">BTC</td>
+                                <td class="py-md-4">62900.2078</td>
+                                <td class="py-md-4 td_orange">-0.71%</td>
+                                <td><img src="assets/img/crypto_rates/bit_graph.svg" alt=""></td>
+                                <td class="two_btn">
+                                    <div class="btn_wrap">
+                                        <a href="#" class="table_btn clr_green">Buy</a>
+                                        <a href="#" class="table_btn clr_none">Sell</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            <tr class="border_bt">
+
+                                <th scope="row"><img src="assets/img/crypto_rates/table_eth.svg" alt=""></th>
+                                <td class="py-md-4">Ethereum</td>
+                                <td class="py-md-4">ETH</td>
+                                <td class="py-md-4">62900.2078</td>
+                                <td class="py-md-4 td_green">2.71%</td>
+                                <td><img src="assets/img/crypto_rates/eth_graph.svg" alt=""></td>
+                                <td class="two_btn">
+                                    <div class="btn_wrap">
+                                        <a href="#" class="table_btn clr_green">Buy</a>
+                                        <a href="#" class="table_btn clr_none">Sell</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            <tr class="border_bt">
+
+                                <th scope="row"><img src="assets/img/crypto_rates/table_car.svg" alt=""></th>
+                                <td class="py-md-4">Cardano</td>
+                                <td class="py-md-4">ADA</td>
+                                <td class="py-md-4">62900.2078</td>
+                                <td class="py-md-4 td_orange">-0.71%</td>
+                                <td><img src="assets/img/crypto_rates/car_graph.svg" alt=""></td>
+                                <td class="two_btn">
+                                    <div class="btn_wrap">
+                                        <a href="#" class="table_btn clr_green">Buy</a>
+                                        <a href="#" class="table_btn clr_none">Sell</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            <tr class="border_bt">
+
+                                <th scope="row"><img src="assets/img/crypto_rates/table_xrp.svg" alt=""></th>
+                                <td class="py-md-4">XRP</td>
+                                <td class="py-md-4">XRP</td>
+                                <td class="py-md-4">62900.2078</td>
+                                <td class="py-md-4 td_green">3.71%</td>
+                                <td><img src="assets/img/crypto_rates/xrp_graph.svg" alt=""></td>
+                                <td class="two_btn">
+                                    <div class="btn_wrap">
+                                        <a href="#" class="table_btn clr_green">Buy</a>
+                                        <a href="#" class="table_btn clr_none">Sell</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            <tr class="border_bt">
+
+                                <th scope="row"><img src="assets/img/crypto_rates/table_lite.svg" alt=""></th>
+                                <td class="py-md-4">Litecoin</td>
+                                <td class="py-md-4">LTC</td>
+                                <td class="py-md-4">62900.2078</td>
+                                <td class="py-md-4 td_orange">-0.71%</td>
+                                <td><img src="assets/img/crypto_rates/lite_graph.svg" alt=""></td>
+                                <td class="two_btn">
+                                    <div class="btn_wrap">
+                                        <a href="#" class="table_btn clr_green">Buy</a>
+                                        <a href="#" class="table_btn clr_none">Sell</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            <tr class="border_bt">
+
+                                <th scope="row"><img src="assets/img/crypto_rates/table_chain.svg" alt=""></th>
+                                <td class="py-md-4">Chainlink</td>
+                                <td class="py-md-4">LINK</td>
+                                <td class="py-md-4">62900.2078</td>
+                                <td class="py-md-4 td_green">5.71%</td>
+                                <td><img src="assets/img/crypto_rates/chain_graph.svg" alt=""></td>
+                                <td class="two_btn">
+                                    <div class="btn_wrap">
+                                        <a href="#" class="table_btn clr_green">Buy</a>
+                                        <a href="#" class="table_btn clr_none">Sell</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            <tr class="border_bt">
+
+                                <th scope="row"><img src="assets/img/crypto_rates/table_uni.svg" alt=""></th>
+                                <td class="py-md-4">Uniswap</td>
+                                <td class="py-md-4">UNI</td>
+                                <td class="py-md-4">62900.2078</td>
+                                <td class="py-md-4 td_orange">-0.71%</td>
+                                <td><img src="assets/img/crypto_rates/uni_graph.svg" alt=""></td>
+                                <td class="two_btn">
+                                    <div class="btn_wrap">
+                                        <a href="#" class="table_btn clr_green">Buy</a>
+                                        <a href="#" class="table_btn clr_none">Sell</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            <tr class="border_bt">
+
+                                <th scope="row"><img src="assets/img/crypto_rates/table_bin.svg" alt=""></th>
+                                <td class="py-md-4">Binancecoin</td>
+                                <td class="py-md-4">BNB</td>
+                                <td class="py-md-4">62900.2078</td>
+                                <td class="py-md-4 td_orange">-0.71%</td>
+                                <td><img src="assets/img/crypto_rates/bin_graph.svg" alt=""></td>
+                                <td class="two_btn">
+                                    <div class="btn_wrap">
+                                        <a href="#" class="table_btn clr_green">Buy</a>
+                                        <a href="#" class="table_btn clr_none">Sell</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            <tr class="border_bt">
+
+                                <th scope="row"><img src="assets/img/crypto_rates/table_pol.svg" alt=""></th>
+                                <td class="py-md-4">Polkadot</td>
+                                <td class="py-md-4">DOT</td>
+                                <td class="py-md-4">62900.2078</td>
+                                <td class="py-md-4 td_green">2.71%</td>
+                                <td><img src="assets/img/crypto_rates/pol_graph.svg" alt=""></td>
+                                <td class="two_btn">
+                                    <div class="btn_wrap">
+                                        <a href="#" class="table_btn clr_green">Buy</a>
+                                        <a href="#" class="table_btn clr_none">Sell</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a href="#"><i class="fas fa-less-than clr_less"></i></a></li>
+                      <li class="page-item"> <a href="#" class="border_circle">1</a></li>
+                      <li class="page-item"> <a href="#" class="border_circle">2</a></li>
+                      <li class="page-item"> <a href="#" class="border_circle">3</a></li>
+                      <li class="page-item"> <a href="#" class="border_circle">4</a></li>
+                      <li class="page-item"> <a href="#" class="border_circle">5</a></li>
+                      <li class="page-item"><a href="#"><i class="fas fa-greater-than clr_great"></i></a></li>
+                    </ul>
+                  </nav>
+
+<!-- 
+                <div class="carosel_wrap">
+                    <a href="#"><img src="assets/img/crypto_rates/carosal_left.svg" alt=""></a>
+                    <div class="num_wrap">
+                        <a href="#" class="border_circle">1</a>
+                        <a href="#" class="border_circle">2</a>
+                        <a href="#" class="border_circle">3</a>
+                        <a href="#" class="border_circle">4</a>
+                        <a href="#" class="border_circle">5</a>
+                    </div>
+                    <a href="#" class="border_circle"><img src="assets/img/crypto_rates/carosel_right.svg" alt=""></a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- crypto rates start  -->
+    <!-- digitrader  start  -->
+    <section class="trader_wrapper">
+        <div class="container">
+
+            <h1 class="trader_title text-center">
+                Why Choose <span>Digitrader?</span>
+            </h1>
+            <div class="card_wrap">
+                <div class="trader_card text-center">
+                    <img src="assets/img/trader_1.svg" alt="" class="trader_img">
+                    <h1 class="card_title">
+                        Financial Guarantee
+                    </h1>
+                    <p class="card_detail">
+                        Despite the volatility of the Crypto market, we provide 100% funds safety. All your buy orders
+                        are safe.
+                    </p>
+                </div>
+
+
+                <div class="trader_card text-center">
+                    <img src="assets/img/trader_2.svg" alt="" class="trader_img">
+                    <h1 class="card_title">
+                        Quick Swaps
+                    </h1>
+                    <p class="card_detail">
+                        You can swap cryptos without spending fiat. You can transfer to us and buy another or just Swap.
+                    </p>
+                </div>
+
+
+                <div class="trader_card text-center">
+                    <img src="assets/img/trader_3.svg" alt="" class="trader_img">
+                    <h1 class="card_title">
+                        Crypto Awareness
+                    </h1>
+                    <p class="card_detail">
+                        We aim to provide crypto guides and awareness to the crypto community. We provide basic crypto
+                        knowledge to our customers.
+                    </p>
+
+                </div>
+            </div>
+    </section>
+    <!-- trader  end  -->
+    <!-- trader2  start  -->
+    <section class="trader2_wrapper">
+        <div class="container">
+            <h1 class="trader_title text-center">
+                Getting Started on <span>DIGI TRADER</span> is Easy
+            </h1>
+            <div class="img_wrap">
+                <img src="assets/img/trader2/trader1-1.svg" alt="">
+            </div>
+            <div class="id_wrap">
+                <img src="assets/img/trader2/trader1-2.svg" alt="">
+                <div class="text_wrap my-auto">
+                    <p class="text_detail">
+                        ‘’ ID verification” is required all new customers need to this is to meet our obligations under
+                        the Anti-Money Laundering and Countering Financing of Terrorism Act 2009.
+                    </p>
+                    <p class="text_detail2">
+                        The timimg may be to our legal review of documents.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- trader2  end  -->
+    <!-- trusted start  -->
+    <section class="trust_wrapper">
+        <div class="container">
+            <h1 class="trader_title mb_50 text-center">
+                Our <span>Trusted</span> Client’s says
+            </h1>
+            <div class="trust">
+                <div class="trust_left">
+                    <div class="carosel_wrapper">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <div class="dp_wrap">
+                                        <img src="assets/img/trust/dp.svg" alt="">
+                                        <div class="title_wrap">
+                                            <p class="dp_title">
+                                                Alpamys Moldashev
+                                            </p>
+                                            <p class="dp_detail">
+                                                Photographer
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="main_detail">
+                                        With the Move messenger I can correspond with clients from all over the world
+                                        and never forget about important meetings.
+                                    </p>
+                                    <img src="assets/img/trust/stars.svg" alt="">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="dp_wrap">
+                                        <img src="assets/img/trust/dp.svg" alt="">
+                                        <div class="title_wrap">
+                                            <p class="dp_title">
+                                                Alpamys Moldashev
+                                            </p>
+                                            <p class="dp_detail">
+                                                Photographer
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="main_detail">
+                                        With the Move messenger I can correspond with clients from all over the world
+                                        and never forget about important meetings.
+                                    </p>
+                                    <img src="assets/img/trust/stars.svg" alt="">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="dp_wrap">
+                                        <img src="assets/img/trust/dp.svg" alt="">
+                                        <div class="title_wrap">
+                                            <p class="dp_title">
+                                                Alpamys Moldashev
+                                            </p>
+                                            <p class="dp_detail">
+                                                Photographer
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="main_detail">
+                                        With the Move messenger I can correspond with clients from all over the world
+                                        and never forget about important meetings.
+                                    </p>
+                                    <img src="assets/img/trust/stars.svg" alt="">
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="trust_right">
+                    <img src="assets/img/trust/trust_right.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- trusted end  -->
+    <!-- footer start  -->
+    <section class="footer_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/footer/f_logo.svg" alt="" class="f_logo">
+                    <p class="footer_detail footer_width">
+                        DIGI TRADER, providing the most robust and secure trading platform is what we strive for.
+                    </p>
+                    <p class="footer_detail2">
+                        NZBN 9429049339819
+                    </p>
+                    <p class="footer_detail2">
+                        FSP No. FSP1001379
+                    </p>
+                    <img src="assets/img/footer/Blockchain_Logo.svg" alt="" class="f_last">
+                </div>
+                <div class="col-md-2 pl-md-0">
+                    <p class="footer_title">
+                        START HERE
+                    </p>
+                    <a href="#" class="footer_detail d-block">Sign Up</a>
+                    <a href="#" class="footer_detail d-block">Buy</a>
+                    <a href="#" class="footer_detail d-block">Sell</a>
+                    <a href="#" class="footer_detail d-block">Knowledge Base</a>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer_title">
+                        ABOUT US
+                    </p>
+                    <a href="#" class="footer_detail d-block">About Us</a>
+                    <a href="#" class="footer_detail d-block">Contact</a>
+                    <a href="#" class="footer_detail d-block">Terms & Conditions</a>
+                    <a href="#" class="footer_detail d-block">Privacy Policy</a>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer_title">
+                        CONTACT
+                    </p>
+                    <div class="massage_text">
+                        <img src="assets/img/footer/message-text.svg" alt="">
+                        <a href="#" class="footer_detail ps-md-2">help@digitraders.nz</a>
+                    </div>
+                    <div class="massage_ques">
+                        <img src="assets/img/footer/message-question.svg" alt="">
+                        <a href="#" class="footer_detail ps-md-2 ">Faq / Support</a>
+                    </div>
+                    <div class="social_icons">
+                        <p class="footer_title">
+                            Social Media Link
+                        </p>
+                        <a href="#"> <img src="assets/img/footer/Facebook.svg" alt="" class="pe-xl-1"></a>
+                        <a href="#"> <img src="assets/img/footer/Instagram.svg" alt="" class="pe-xl-1"> </a>
+                        <a href="#"> <img src="assets/img/footer/telegram.svg" alt="" class="pe-xl-1"> </a>
+                        <a href="#"> <img src="assets/img/footer/Twitter.svg" alt="" class="pe-xl-1"></a>
+                        <a href="#"> <img src="assets/img/footer/Linkedin.svg" alt="" class="pe-xl-1"> </a>
+                        <a href="#"> <img src="assets/img/footer/youtube.svg" alt="" class="pe-xl-1"> </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer_last">
+                <p>
+                    © 2021 DIGI TRADER LIMITED - All rights reserved
+                </p>
+                <a href="#">v2.4.5</a>
+            </div>
+        </div>
+    </section>
+    <!-- footer end  -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+<!-- jquery -->
+
+</html>
